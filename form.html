@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+</head>
+<body>
+      <h1>Student Admission Form</h1>
+      <hr>
+      <form>
+        <label> Full Name</label>
+        <input type="text" minlength="3">
+        <br>
+        <br>
+        <label>Email Address</label>
+        <input type="email" required>
+        <br>
+        <br>
+        <label>age</label>
+        <input type="number" min="15">
+        <br>
+        <br>
+        <label>Date of fees submission</label>
+        <input type="date">
+        <br>
+        <br>
+        <label>Mailing address</label>
+        <br>
+        <textarea cols="30" rows="10"></textarea>
+        <br><br>   
+        
+        <label>Select city</label>
+        <select>
+            <option>Lucknow</option>
+            <option>Barabanki</option>
+            <option>Banaras</option>
+            <option>Prayagraj</option>
+            <option>Haridwar</option>
+        </select>
+         <br><br>
+
+        <label> Board of Intermediate</label>
+        <input type="text" list="Board">
+
+        <datalist id="Board">
+            <option>CBSE Board</option>
+            <option>UP Board</option>
+            <option>ICSE Board</option>
+            <option>Bihar Board</option>
+
+        </datalist>
+        <br><br>
+        <label>Gender</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <br><br>
+
+        <input type="checkbox"> <span>Accept all terms and conditions</span>
+        <details>
+            <summary>View Terms and conditions</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<mark>Assumenda molestiae asperiores cupiditate quia numquam est totam ullam dolore natus suscipit, temporibus mollitia!</mark>mark Amet deleniti quas asperiores a porro quo voluptatum?</p>
+        </details>
+        <br>
+
+
+
+
+
+
+
+        <button>submit</button>
+
+      </form>
+    
+</body>
+</html>
