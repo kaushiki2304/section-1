@@ -8,21 +8,42 @@
     <style>
         h2{
            text-align: center;
-           color: rgb(119, 0, 255);
+           color: #1500ff;
            font-size: 25px;
 
         }
         .myclass{
-            color: rgb(86, 226, 43);
+            color: hwb(123 11% 24%);
             background-color: black;
             font-size: 50px;
+        }
 
+        #myid{
+
+            color:hsl(233, 96%, 67%);
+            font-size:50px;
+            font-weight: bold;
+        } 
+        
+        #myid2{
+            color:rgb(14, 232, 134);
+            font-size: 50px;
+        
+        }
+        
+        .myclass2{
+             color:hwb(278 0% 0%) !important; 
+
+        }
+        .myclass3{
+            color:crimson;
         }
 
     </style>
 
 
 </head>
+  <link rel="stylesheet" href="style.css">
 <body>
     <h1 style="font-size: 30px; color: brown; text-decoration: underline;" >Inline tags are used to style individual tags only</h1>
     <!-- h1......starting tag>element</h1......ending tag -->
@@ -32,5 +53,11 @@
      <h2 class="myclass">Name selectors are used to select elements by their tag name</h2>
 
      <p class="myclass">Class selectors are used select elements by their class name</p>
+
+     <h3 id="myid">Id selectors are used to select elements by their id name</h3>
+     <p id="myid2" class="myclass2" style="color: yellowgreen;">some text</p>
+     <h2 class="myclass2 myclass3">some selector prioprity</h2>
+
+     <button class="btn">using external css</button>
 </body>
 </html>
