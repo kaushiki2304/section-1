@@ -19,6 +19,7 @@
             /* box-shadow: x-offset y-offset blur size color */
             box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.518);
             box-sizing: border-box;
+            background-color: white;
         }
 
         body{
@@ -26,6 +27,11 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background-image: linear-gradient(177deg, #dd2a2ae9, #7d7de86c,#acac5267),
+            url('http://www.pixelstalk.net/wp-content/uploads/2016/04/Pictures-simple-wallpaper-HD.jpg');
+            background-size: cover;
+
+
         }
 
         .form-title{
@@ -41,16 +47,26 @@
             border-radius: 5px;
             margin-bottom: 20px;
         }
+        .myinput:focus{
+            background-color: rgb(110, 228, 208);
+        }
 
         .mybtn{
             background-color: blueviolet;
             color: white;
             padding: 10px;
-            border: none;
+            border: 2px solid blueviolet;
             width: 100%;
             border-radius: 5px;
             margin-top: 20px;
             box-shadow: 2px 2px 2px 0 #0000007c;
+            transition-duration: 300ms;
+        }
+        .mybtn:hover{
+            background-color: white;
+            color: rgb(9, 1, 17);
+            outline: 2px solid rgb(71, 7, 130)
+
         }
 
 </style>
